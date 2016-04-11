@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BollywoodViewController" customModule="Yinyue_liu" customModuleProvider="target">
+            <connections>
+                <outlet property="gifImage" destination="fSs-Up-CPm" id="J6V-Q7-OwR"/>
+                <outlet property="gifImageRadioCity" destination="qkj-Id-vh6" id="fWq-fB-4BT"/>
+                <outlet property="gifImgBrnb" destination="agv-QK-kdB" id="dYp-Th-ac7"/>
+                <outlet property="gifImgDjGaurav" destination="4b3-Eb-oHk" id="r07-sZ-EHb"/>
+                <outlet property="gifImgHungama" destination="hyZ-PX-9Yz" id="QIo-Kp-xiU"/>
+                <outlet property="gifImgM4Uradio" destination="dex-iP-enx" id="kFz-2S-MpT"/>
+                <outlet property="gifImgRadioHsl" destination="BLo-5H-gh9" id="NqS-st-GUI"/>
+                <outlet property="helpMenu" destination="Nlj-Tx-Z49" id="dLh-np-X39"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="volumeController" destination="mpQ-ad-8p0" id="pNB-eo-37D"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="472"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-6k-ilE">
+                    <rect key="frame" x="34" y="394" width="267" height="95"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Yīnyuè liú" id="kad-p7-cXk">
+                        <font key="font" size="55" name="Baskerville-SemiBoldItalic"/>
+                        <color key="textColor" red="1" green="0.56526028100000003" blue="0.079688711379999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-Kc-nd3">
+                    <rect key="frame" x="114" y="355" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="play_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ouc-iq-Xda">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="playCurrentSelected:" target="-2" id="kzX-Gu-hrR"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o07-lk-g8P">
+                    <rect key="frame" x="167" y="355" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="stop_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Gyz-1e-f44">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="stopCurrentSelected:" target="-2" id="2by-4X-XhP"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nde-xC-ciO">
+                    <rect key="frame" x="8" y="305" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Volume" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CdD-XB-0Mh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-ad-8p0">
+                    <rect key="frame" x="62" y="319" width="254" height="21"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ZGM-GZ-PEd"/>
+                    <connections>
+                        <action selector="controlVolume:" target="-2" id="uDU-Fl-709"/>
+                    </connections>
+                </slider>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0O-oW-1WL">
+                    <rect key="frame" x="64" y="240" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="city1016-logo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="06Y-wL-EuG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectCity1016:" target="-2" id="eoS-U4-Dy3"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-Tt-7w4">
+                    <rect key="frame" x="236" y="4" width="93" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="exit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="shB-cw-9WJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="quitApplication:" target="-2" id="Mju-BH-GcQ"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSs-Up-CPm">
+                    <rect key="frame" x="14" y="240" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="eNg-EC-rxu"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-x5-cuE">
+                    <rect key="frame" x="164" y="245" width="116" height="43"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Hungama_Logo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="R4n-0p-8Qx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectHungama:" target="-2" id="9Jy-gG-6VR"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-PX-9Yz">
+                    <rect key="frame" x="277" y="242" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="16r-n7-Uh1"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkj-Id-vh6">
+                    <rect key="frame" x="277" y="187" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="oHx-Ve-pze"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-1K-UBD">
+                    <rect key="frame" x="164" y="187" width="116" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="radiocity" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="usH-qP-UY2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectPlanetRadioCity:" target="-2" id="vyj-1h-sr5"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9SV-qF-0zn">
+                    <rect key="frame" x="51" y="187" width="90" height="43"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="radio-hsl" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6cf-m2-heU">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectradioHsl:" target="-2" id="caS-7r-EK9"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLo-5H-gh9">
+                    <rect key="frame" x="8" y="187" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="aR4-By-mOr"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agv-QK-kdB">
+                    <rect key="frame" x="8" y="107" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="Abr-H7-GYj"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlC-ap-123">
+                    <rect key="frame" x="64" y="106" width="72" height="71"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bollwood-radio-and-beyond" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hjb-kV-LeX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectBrnb:" target="-2" id="pyB-gh-MP4"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aT9-Sp-vIN">
+                    <rect key="frame" x="164" y="112" width="116" height="65"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="dj-gaurav" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4JT-Jf-TXf">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectDjyGaurav:" target="-2" id="Prb-Bu-qdr"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-Eb-oHk">
+                    <rect key="frame" x="277" y="117" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="ROw-JY-r5x"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dex-iP-enx">
+                    <rect key="frame" x="14" y="39" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="U1I-Mc-Ebh"/>
+                </imageView>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p25-L4-Vsf">
+                    <rect key="frame" x="64" y="39" width="107" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="logo-magic" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fVA-Vs-kSW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectM4uRadio:" target="-2" id="6Iu-Gv-5dA"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-DI-jon">
+                    <rect key="frame" x="266" y="355" width="48" height="48"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="info-icon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4Tg-0U-xgo">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openHelp:" target="-2" id="6C6-Ow-k7f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="207" y="261"/>
+        </customView>
+        <menu id="Nlj-Tx-Z49">
+            <items>
+                <menuItem title="Launch at system satrtup" id="v9t-qt-y9z" userLabel="Launch at system satrtup">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="launchAtStartup:" target="-2" id="9l4-fD-nla"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="OX0-3y-fT9"/>
+                <menuItem title="Item 2" id="ZOW-QX-yTM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Item 3" id="Su3-Oe-CUA">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="515.5" y="272.5"/>
+        </menu>
+    </objects>
+    <resources>
+        <image name="Hungama_Logo" width="939" height="270"/>
+        <image name="Volume" width="245.75999450683594" height="245.75999450683594"/>
+        <image name="bollwood-radio-and-beyond" width="140" height="140"/>
+        <image name="city1016-logo" width="300" height="300"/>
+        <image name="dj-gaurav" width="500" height="281"/>
+        <image name="exit" width="200" height="133"/>
+        <image name="info-icon" width="14.399999618530273" height="14.592000007629395"/>
+        <image name="logo-magic" width="340" height="139"/>
+        <image name="play_btn" width="57.599998474121094" height="57.599998474121094"/>
+        <image name="radio-hsl" width="400" height="250"/>
+        <image name="radiocity" width="181" height="71"/>
+        <image name="stop_btn" width="80" height="80"/>
+    </resources>
+</document>

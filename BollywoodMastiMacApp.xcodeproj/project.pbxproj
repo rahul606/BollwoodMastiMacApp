@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		502A208C1C54D97E001783D5 /* musicbars.gif in Resources */ = {isa = PBXBuildFile; fileRef = 502A208B1C54D97E001783D5 /* musicbars.gif */; };
+		50E01F5A1C3C6C7D0077F9D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E01F591C3C6C7D0077F9D6 /* AppDelegate.swift */; };
+		50E01F5C1C3C6C7D0077F9D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E01F5B1C3C6C7D0077F9D6 /* ViewController.swift */; };
+		50E01F5E1C3C6C7D0077F9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E01F5D1C3C6C7D0077F9D6 /* Assets.xcassets */; };
+		50E01F611C3C6C7D0077F9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E01F5F1C3C6C7D0077F9D6 /* Main.storyboard */; };
+		50E01F6A1C3C8D960077F9D6 /* BollywoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E01F681C3C8D960077F9D6 /* BollywoodViewController.swift */; };
+		50E01F6B1C3C8D960077F9D6 /* BollywoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50E01F691C3C8D960077F9D6 /* BollywoodViewController.xib */; };
+		50E01F6D1C3D308A0077F9D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E01F6C1C3D308A0077F9D6 /* AVFoundation.framework */; };
+		50E01F701C3D337D0077F9D6 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E01F6F1C3D337D0077F9D6 /* RadioPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		500D610A1C55B86D008AED9C /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		502A208B1C54D97E001783D5 /* musicbars.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = musicbars.gif; sourceTree = "<group>"; };
+		50E01F561C3C6C7D0077F9D6 /* Yinyue-liu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yinyue-liu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E01F591C3C6C7D0077F9D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50E01F5B1C3C6C7D0077F9D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50E01F5D1C3C6C7D0077F9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50E01F601C3C6C7D0077F9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50E01F621C3C6C7D0077F9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E01F681C3C8D960077F9D6 /* BollywoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BollywoodViewController.swift; sourceTree = "<group>"; };
+		50E01F691C3C8D960077F9D6 /* BollywoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BollywoodViewController.xib; sourceTree = "<group>"; };
+		50E01F6C1C3D308A0077F9D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50E01F6E1C3D30AA0077F9D6 /* BollywoodMastiMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BollywoodMastiMacApp.entitlements; sourceTree = "<group>"; };
+		50E01F6F1C3D337D0077F9D6 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50E01F531C3C6C7D0077F9D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E01F6D1C3D308A0077F9D6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		502A208A1C54D96C001783D5 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				502A208B1C54D97E001783D5 /* musicbars.gif */,
+			);
+			name = gif;
+			sourceTree = "<group>";
+		};
+		50E01F4D1C3C6C7C0077F9D6 = {
+			isa = PBXGroup;
+			children = (
+				500D610A1C55B86D008AED9C /* ServiceManagement.framework */,
+				502A208A1C54D96C001783D5 /* gif */,
+				50E01F6C1C3D308A0077F9D6 /* AVFoundation.framework */,
+				50E01F581C3C6C7D0077F9D6 /* BollywoodMastiMacApp */,
+				50E01F571C3C6C7D0077F9D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50E01F571C3C6C7D0077F9D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50E01F561C3C6C7D0077F9D6 /* Yinyue-liu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50E01F581C3C6C7D0077F9D6 /* BollywoodMastiMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				50E01F6E1C3D30AA0077F9D6 /* BollywoodMastiMacApp.entitlements */,
+				50E01F591C3C6C7D0077F9D6 /* AppDelegate.swift */,
+				50E01F5B1C3C6C7D0077F9D6 /* ViewController.swift */,
+				50E01F5D1C3C6C7D0077F9D6 /* Assets.xcassets */,
+				50E01F5F1C3C6C7D0077F9D6 /* Main.storyboard */,
+				50E01F621C3C6C7D0077F9D6 /* Info.plist */,
+				50E01F681C3C8D960077F9D6 /* BollywoodViewController.swift */,
+				50E01F691C3C8D960077F9D6 /* BollywoodViewController.xib */,
+				50E01F6F1C3D337D0077F9D6 /* RadioPlayer.swift */,
+			);
+			path = BollywoodMastiMacApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50E01F551C3C6C7D0077F9D6 /* Yinyue-liu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50E01F651C3C6C7D0077F9D6 /* Build configuration list for PBXNativeTarget "Yinyue-liu" */;
+			buildPhases = (
+				50E01F521C3C6C7D0077F9D6 /* Sources */,
+				50E01F531C3C6C7D0077F9D6 /* Frameworks */,
+				50E01F541C3C6C7D0077F9D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yinyue-liu";
+			productName = BollywoodMastiMacApp;
+			productReference = 50E01F561C3C6C7D0077F9D6 /* Yinyue-liu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50E01F4E1C3C6C7C0077F9D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rahul Tomar";
+				TargetAttributes = {
+					50E01F551C3C6C7D0077F9D6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = DGL5UB4ZR5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 50E01F511C3C6C7C0077F9D6 /* Build configuration list for PBXProject "BollywoodMastiMacApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50E01F4D1C3C6C7C0077F9D6;
+			productRefGroup = 50E01F571C3C6C7D0077F9D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50E01F551C3C6C7D0077F9D6 /* Yinyue-liu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50E01F541C3C6C7D0077F9D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E01F5E1C3C6C7D0077F9D6 /* Assets.xcassets in Resources */,
+				50E01F6B1C3C8D960077F9D6 /* BollywoodViewController.xib in Resources */,
+				502A208C1C54D97E001783D5 /* musicbars.gif in Resources */,
+				50E01F611C3C6C7D0077F9D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50E01F521C3C6C7D0077F9D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E01F701C3D337D0077F9D6 /* RadioPlayer.swift in Sources */,
+				50E01F5C1C3C6C7D0077F9D6 /* ViewController.swift in Sources */,
+				50E01F6A1C3C8D960077F9D6 /* BollywoodViewController.swift in Sources */,
+				50E01F5A1C3C6C7D0077F9D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50E01F5F1C3C6C7D0077F9D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50E01F601C3C6C7D0077F9D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50E01F631C3C6C7D0077F9D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50E01F641C3C6C7D0077F9D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50E01F661C3C6C7D0077F9D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BollywoodMastiMacApp/BollywoodMastiMacApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BollywoodMastiMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahultomar.BollywoodMastiMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		50E01F671C3C6C7D0077F9D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BollywoodMastiMacApp/BollywoodMastiMacApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BollywoodMastiMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahultomar.BollywoodMastiMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50E01F511C3C6C7C0077F9D6 /* Build configuration list for PBXProject "BollywoodMastiMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E01F631C3C6C7D0077F9D6 /* Debug */,
+				50E01F641C3C6C7D0077F9D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50E01F651C3C6C7D0077F9D6 /* Build configuration list for PBXNativeTarget "Yinyue-liu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50E01F661C3C6C7D0077F9D6 /* Debug */,
+				50E01F671C3C6C7D0077F9D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50E01F4E1C3C6C7C0077F9D6 /* Project object */;
+}
