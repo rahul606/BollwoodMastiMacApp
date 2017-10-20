@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="BollywoodViewController" customModule="Yinyue_liu" customModuleProvider="target">
@@ -25,9 +26,10 @@
             <rect key="frame" x="0.0" y="0.0" width="334" height="472"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-6k-ilE">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br3-6k-ilE">
                     <rect key="frame" x="34" y="394" width="267" height="95"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Yīnyuè liú" id="kad-p7-cXk">
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Gaanaa" id="kad-p7-cXk">
                         <font key="font" size="55" name="Baskerville-SemiBoldItalic"/>
                         <color key="textColor" red="1" green="0.56526028100000003" blue="0.079688711379999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -35,6 +37,7 @@
                 </textField>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-Kc-nd3">
                     <rect key="frame" x="114" y="355" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="play_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ouc-iq-Xda">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -45,6 +48,7 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o07-lk-g8P">
                     <rect key="frame" x="167" y="355" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="stop_btn" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Gyz-1e-f44">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -55,13 +59,15 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nde-xC-ciO">
                     <rect key="frame" x="8" y="305" width="48" height="48"/>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Volume" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CdD-XB-0Mh">
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="volume" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CdD-XB-0Mh">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
                 <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpQ-ad-8p0">
-                    <rect key="frame" x="62" y="319" width="254" height="21"/>
+                    <rect key="frame" x="62" y="319" width="254" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ZGM-GZ-PEd"/>
                     <connections>
                         <action selector="controlVolume:" target="-2" id="uDU-Fl-709"/>
@@ -69,6 +75,7 @@
                 </slider>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0O-oW-1WL">
                     <rect key="frame" x="64" y="240" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="city1016-logo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="06Y-wL-EuG">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -79,6 +86,7 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-Tt-7w4">
                     <rect key="frame" x="236" y="4" width="93" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="exit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="shB-cw-9WJ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -89,10 +97,12 @@
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSs-Up-CPm">
                     <rect key="frame" x="14" y="240" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="eNg-EC-rxu"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="eNg-EC-rxu"/>
                 </imageView>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-x5-cuE">
                     <rect key="frame" x="164" y="245" width="116" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Hungama_Logo" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="R4n-0p-8Qx">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -103,14 +113,17 @@
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-PX-9Yz">
                     <rect key="frame" x="277" y="242" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="16r-n7-Uh1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="16r-n7-Uh1"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkj-Id-vh6">
                     <rect key="frame" x="277" y="187" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="oHx-Ve-pze"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="oHx-Ve-pze"/>
                 </imageView>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJn-1K-UBD">
                     <rect key="frame" x="164" y="187" width="116" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="radiocity" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="usH-qP-UY2">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -121,6 +134,7 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9SV-qF-0zn">
                     <rect key="frame" x="51" y="187" width="90" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="radio-hsl" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6cf-m2-heU">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -131,14 +145,17 @@
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLo-5H-gh9">
                     <rect key="frame" x="8" y="187" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="aR4-By-mOr"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="aR4-By-mOr"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agv-QK-kdB">
                     <rect key="frame" x="8" y="107" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="Abr-H7-GYj"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="Abr-H7-GYj"/>
                 </imageView>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DlC-ap-123">
                     <rect key="frame" x="64" y="106" width="72" height="71"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bollwood-radio-and-beyond" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hjb-kV-LeX">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -149,6 +166,7 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aT9-Sp-vIN">
                     <rect key="frame" x="164" y="112" width="116" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="dj-gaurav" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4JT-Jf-TXf">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -159,14 +177,17 @@
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-Eb-oHk">
                     <rect key="frame" x="277" y="117" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="ROw-JY-r5x"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="ROw-JY-r5x"/>
                 </imageView>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dex-iP-enx">
                     <rect key="frame" x="14" y="39" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" id="U1I-Mc-Ebh"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="U1I-Mc-Ebh"/>
                 </imageView>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p25-L4-Vsf">
                     <rect key="frame" x="64" y="39" width="107" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="logo-magic" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="fVA-Vs-kSW">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -177,7 +198,8 @@
                 </button>
                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-DI-jon">
                     <rect key="frame" x="266" y="355" width="48" height="48"/>
-                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="info-icon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4Tg-0U-xgo">
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAdvanced" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="4Tg-0U-xgo">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
@@ -190,18 +212,18 @@
         </customView>
         <menu id="Nlj-Tx-Z49">
             <items>
-                <menuItem title="Launch at system satrtup" id="v9t-qt-y9z" userLabel="Launch at system satrtup">
+                <menuItem title="Launch at system startup" id="v9t-qt-y9z" userLabel="Launch at system satrtup">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="launchAtStartup:" target="-2" id="9l4-fD-nla"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="OX0-3y-fT9"/>
-                <menuItem title="Item 2" id="ZOW-QX-yTM">
+                <menuItem title="About" id="Su3-Oe-CUA">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 3" id="Su3-Oe-CUA">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="orderFrontStandardAboutPanel:" target="-1" id="5Pt-5t-D3a"/>
+                    </connections>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="515.5" y="272.5"/>
@@ -209,16 +231,16 @@
     </objects>
     <resources>
         <image name="Hungama_Logo" width="939" height="270"/>
-        <image name="Volume" width="245.75999450683594" height="245.75999450683594"/>
+        <image name="NSAdvanced" width="32" height="32"/>
         <image name="bollwood-radio-and-beyond" width="140" height="140"/>
         <image name="city1016-logo" width="300" height="300"/>
         <image name="dj-gaurav" width="500" height="281"/>
         <image name="exit" width="200" height="133"/>
-        <image name="info-icon" width="14.399999618530273" height="14.592000007629395"/>
         <image name="logo-magic" width="340" height="139"/>
         <image name="play_btn" width="57.599998474121094" height="57.599998474121094"/>
         <image name="radio-hsl" width="400" height="250"/>
         <image name="radiocity" width="181" height="71"/>
         <image name="stop_btn" width="80" height="80"/>
+        <image name="volume" width="640" height="640"/>
     </resources>
 </document>

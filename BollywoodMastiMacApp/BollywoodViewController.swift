@@ -37,11 +37,11 @@ class BollywoodViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        volumeController.continuous = true
+        volumeController.isContinuous = true
         volumeController.floatValue = 20.0
     }
     
-    @IBAction func playCurrentSelected(sender: NSButton) {
+    @IBAction func playCurrentSelected(_ sender: NSButton) {
         if(oneRadioSelected && radioStopped){
             radioStopped = false
             rPlayer = RadioPlayer(radioUrl: radioUrl)
@@ -50,16 +50,16 @@ class BollywoodViewController: NSViewController {
         
     }
     
-    @IBAction func stopCurrentSelected(sender: NSButton) {
+    @IBAction func stopCurrentSelected(_ sender: NSButton) {
         rPlayer.pause()
         radioStopped = true
     }
     
-    @IBAction func controlVolume(sender: NSSlider) {
+    @IBAction func controlVolume(_ sender: NSSlider) {
         rPlayer.controlVolume(volumeController)
     }
     
-    @IBAction func selectCity1016(sender: NSButton) {
+    @IBAction func selectCity1016(_ sender: NSButton) {
         if(!city1016Selected){
             city1016Selected = true
             oneRadioSelected = true
@@ -71,7 +71,7 @@ class BollywoodViewController: NSViewController {
             radioUrl = "http://playerservices.streamtheworld.com/pls/ARNCITYAAC.pls"
             rPlayer = RadioPlayer(radioUrl: radioUrl)
             rPlayer.play()
-            gifImage.image = NSImage(named: "musicbars.gif")
+            gifImage.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             gifImgHungama.image = NSImage()
             gifImgRadioHsl.image = NSImage()
             gifImageRadioCity.image = NSImage()
@@ -83,7 +83,7 @@ class BollywoodViewController: NSViewController {
         
     }
     
-    @IBAction func selectHungama(sender: NSButton) {
+    @IBAction func selectHungama(_ sender: NSButton) {
         if(!hungamaSelected){
             hungamaSelected = true
             oneRadioSelected = true
@@ -93,7 +93,7 @@ class BollywoodViewController: NSViewController {
             radioUrl = "http://123.176.41.8:8056/listen.pls"
             rPlayer = RadioPlayer(radioUrl: radioUrl)
             rPlayer.play()
-            gifImgHungama.image = NSImage(named: "musicbars.gif")
+            gifImgHungama.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             gifImage.image = NSImage()
             gifImgRadioHsl.image = NSImage()
             brnbSelected = false
@@ -105,7 +105,7 @@ class BollywoodViewController: NSViewController {
         }
     }
     
-    @IBAction func selectPlanetRadioCity(sender: NSButton) {
+    @IBAction func selectPlanetRadioCity(_ sender: NSButton) {
         if(!planetRadioCitySelected){
             hungamaSelected = false
             oneRadioSelected = true
@@ -117,7 +117,7 @@ class BollywoodViewController: NSViewController {
             rPlayer.play()
             gifImgHungama.image = NSImage()
             gifImage.image = NSImage()
-            gifImageRadioCity.image = NSImage(named: "musicbars.gif")
+            gifImageRadioCity.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             gifImgRadioHsl.image = NSImage()
             brnbSelected = false
             gifImgBrnb.image = NSImage()
@@ -128,7 +128,7 @@ class BollywoodViewController: NSViewController {
         }
     }
     
-    @IBAction func selectradioHsl(sender: NSButton) {
+    @IBAction func selectradioHsl(_ sender: NSButton) {
         if(!radioHslSelected){
             hungamaSelected = false
             oneRadioSelected = true
@@ -141,7 +141,7 @@ class BollywoodViewController: NSViewController {
             gifImgHungama.image = NSImage()
             gifImage.image = NSImage()
             gifImageRadioCity.image = NSImage()
-            gifImgRadioHsl.image = NSImage(named: "musicbars.gif")
+            gifImgRadioHsl.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             brnbSelected = false
             gifImgBrnb.image = NSImage()
             djGauravSelected = false
@@ -151,7 +151,7 @@ class BollywoodViewController: NSViewController {
         }
     }
     
-    @IBAction func selectBrnb(sender: NSButton) {
+    @IBAction func selectBrnb(_ sender: NSButton) {
         if(!brnbSelected){
             hungamaSelected = false
             oneRadioSelected = true
@@ -166,7 +166,7 @@ class BollywoodViewController: NSViewController {
             gifImageRadioCity.image = NSImage()
             gifImgRadioHsl.image = NSImage()
             brnbSelected = true
-            gifImgBrnb.image = NSImage(named: "musicbars.gif")
+            gifImgBrnb.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             djGauravSelected = false
             gifImgDjGaurav.image = NSImage()
             m4uRadioSelected = false
@@ -174,7 +174,7 @@ class BollywoodViewController: NSViewController {
         }
     }
     
-    @IBAction func selectDjyGaurav(sender: NSButton) {
+    @IBAction func selectDjyGaurav(_ sender: NSButton) {
         if(!djGauravSelected){
             hungamaSelected = false
             oneRadioSelected = true
@@ -191,13 +191,13 @@ class BollywoodViewController: NSViewController {
             brnbSelected = false
             gifImgBrnb.image = NSImage()
             djGauravSelected = true
-            gifImgDjGaurav.image = NSImage(named: "musicbars.gif")
+            gifImgDjGaurav.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
             m4uRadioSelected = false
             gifImgM4Uradio.image = NSImage()
         }
     }
     
-    @IBAction func selectM4uRadio(sender: NSButton) {
+    @IBAction func selectM4uRadio(_ sender: NSButton) {
         if(!m4uRadioSelected){
             hungamaSelected = false
             oneRadioSelected = true
@@ -216,23 +216,21 @@ class BollywoodViewController: NSViewController {
             djGauravSelected = false
             gifImgDjGaurav.image = NSImage()
             m4uRadioSelected = false
-            gifImgM4Uradio.image = NSImage(named: "musicbars.gif")
+            gifImgM4Uradio.image = NSImage(named: NSImage.Name(rawValue: "musicbars.gif"))
         }
 
     }
     
-    @IBAction func quitApplication(sender: NSButton) {
-        NSApplication.sharedApplication().terminate(sender)
+    @IBAction func quitApplication(_ sender: NSButton) {
+        NSApplication.shared.terminate(sender)
     }
     
-    @IBAction func openHelp(sender: NSButton) {
-        helpMenu.popUpMenuPositioningItem(helpMenu.itemAtIndex(0), atLocation: NSEvent.mouseLocation(), inView: nil)
+    @IBAction func openHelp(_ sender: NSButton) {
+        helpMenu.popUp(positioning: helpMenu.item(at: 0), at: NSEvent.mouseLocation, in: nil)
     }
     
-    @IBAction func launchAtStartup(sender: NSMenuItem) {
-        sender.state = 1
+    @IBAction func launchAtStartup(_ sender: NSMenuItem) {
+        sender.state = NSControl.StateValue(rawValue: 1)
     }
-    
-    
 
 }

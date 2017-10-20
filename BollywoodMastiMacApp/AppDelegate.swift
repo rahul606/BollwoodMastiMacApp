@@ -11,40 +11,49 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     let popover = NSPopover()
+    
+    var eventMonitor: EventMonitor?
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         if let button = statusItem.button {
-            button.image = NSImage(named: "Yinyue-Liu-Logo-Menu")
-            button.action = Selector("openRadioWindow:")
+            button.image = NSImage(named: NSImage.Name(rawValue: "Yinyue-Liu-Logo-Menu"))
+            button.action = #selector(AppDelegate.openRadioWindow(_:))
         }
         
-        popover.contentViewController = BollywoodViewController(nibName: "BollywoodViewController", bundle: nil)
+        popover.contentViewController = BollywoodViewController(nibName: NSNib.Name(rawValue: "BollywoodViewController"), bundle: nil)
         
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
+            if let strongSelf = self, strongSelf.popover.isShown {
+                strongSelf.closePopover(event)
+            }
+        }
         
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
     
-    func openRadioWindow(sender: AnyObject) {
-        if popover.shown {
+    @objc func openRadioWindow(_ sender: AnyObject) {
+        if popover.isShown {
             closePopover(sender)
         } else {
             showPopover(sender)
         }
     }
     
-    func showPopover(sender: AnyObject?) {
+    func showPopover(_ sender: AnyObject?) {
         if let button = statusItem.button {
-            popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
+            eventMonitor?.start()
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
         }
     }
     
-    func closePopover(sender: AnyObject?) {
+    func closePopover(_ sender: AnyObject?) {
+        eventMonitor?.stop()
         popover.performClose(sender)
     }
 

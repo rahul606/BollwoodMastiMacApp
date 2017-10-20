@@ -8,16 +8,17 @@
 
 import Foundation
 import AVFoundation
+import AppKit
 
 class RadioPlayer {
     
-    private var player: AVPlayer = AVPlayer()
-    private var isPlaying = false
-    private var radioUrl: String
+    fileprivate var player: AVPlayer = AVPlayer()
+    fileprivate var isPlaying = false
+    fileprivate var radioUrl: String
     
     init(radioUrl: String){
         self.radioUrl = radioUrl
-        self.player = AVPlayer(URL: NSURL(string: radioUrl)!)
+        self.player = AVPlayer(url: URL(string: radioUrl)!)
     }
     
     func play() {
@@ -42,7 +43,7 @@ class RadioPlayer {
         return isPlaying
     }
     
-    func controlVolume(slider: NSSlider){
+    func controlVolume(_ slider: NSSlider){
         player.volume = slider.floatValue
     }
 }
